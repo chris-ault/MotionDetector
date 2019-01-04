@@ -5,11 +5,11 @@ In this Configuration project on 4.2v draws only 640uA while asleep.
 
 Devices Used:
 ------
--Lolin32 type ESP32
+-Lolin32 type ESP32 ($10)
 
--GY-521 breakout for MPU6050
+-GY-521 breakout for MPU6050 ($2)
 
--2x 400mAh lipos in parallel 4.2v attached to Lolin32 battery port
+-2x 400mAh lipos in parallel 4.2v attached to Lolin32 battery port ($10 total)
 
 
 Wiring

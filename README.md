@@ -32,6 +32,23 @@ The ESP32 is has interrupt setup on pin 15 to wake whenever MPU6050 motion break
 After waking the ESP32 does POST to PushingBox(http://pushingbox.com) who has Scenario configured to notify Pushbullet(http://pushbullet.com) and send a notification to cell device.
 ESP32 is put into low power state and sleeps until interrupt is triggered again.
 
+
+Todo
+-----
+Lower power consumption would be nice:
+- Slow ESP32 clock speed to use less current while awake.
+- Remove delays to shorten awake time.
+
+Battery status of any kind:
+- Timer based delay to wake up daily to notify battery isn't dead yet.
+- Message about battery voltage using transistor to voltage divider in order to not have constant power draw.
+
+Increase sensitivity beyond simply setting Motion detection threshold to lowest value of 1.
+- Possibly increase MPU polling time if it doesn't increase current.
+
+Timer interrupt to only notify once per period of time.
+
+
 Shoulders of Giants
 ----
 These people did all the hard work:

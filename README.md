@@ -46,6 +46,9 @@ Battery status of any kind:
 Increase sensitivity beyond simply setting Motion detection threshold to lowest value of 1.
 - Possibly increase MPU polling time if it doesn't increase current.
 
+Interface for Configuration:
+- Access point for configuring SSID, Password, Delayed Interrupts, Notification on low power
+
 Timer interrupt to only notify once per period of time.
 
 

@@ -31,3 +31,13 @@ The MPU6050 is configured to pulse low on the INT pin.  Registers are also confi
 The ESP32 is has interrupt setup on pin 15 to wake whenever MPU6050 motion breaks the configured threshold.
 After waking the ESP32 does POST to PushingBox(http://pushingbox.com) who has Scenario configured to notify Pushbullet(http://pushbullet.com) and send a notification to cell device.
 ESP32 is put into low power state and sleeps until interrupt is triggered again.
+
+Shoulders of Giants
+----
+These people did all the hard work:
+
+MPU Register configuration for interrupt with some changes by me for lower power consumption: https://arduino.stackexchange.com/a/48430
+
+ESP32 deep sleep documentation found here: https://github.com/espressif/esp-idf/blob/master/docs/en/api-reference/system/sleep_modes.rst
+
+Cell phone notifications guide to connect ESP with pushingbox with pushbullet: https://www.geekstips.com/android-push-notifications-esp8266-arduino-tutorial/

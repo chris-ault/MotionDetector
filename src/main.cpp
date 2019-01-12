@@ -6,6 +6,15 @@
 /*
 MotionDetector
 =====================================
+
+*NOTE: The registers used in this have put my mpu6050 to a permanant interrupt
+* sleep I cannot recover it from.  It will still work in interrupt mode but nothing else.
+
+*Note2: There is a bug in the WiFi library that does not let the esp deep sleep after wifi is turned on.
+* see for more details: https://esp32.com/viewtopic.php?f=19&t=8392
+* " For now you can add a call 'adc_power_off();' (from driver/adc.h) right before entering deep sleep."
+
+
 Wiring
 ======
 MPU6050    GY-521(MPU6050)

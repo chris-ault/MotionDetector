@@ -31,7 +31,7 @@ The MPU6050 is configured to pulse low on the INT pin.  Registers are also confi
 The ESP32 is has interrupt setup on pin 15 to wake whenever MPU6050 motion breaks the configured threshold.
 After waking the ESP32 does POST to PushingBox(http://pushingbox.com) who has Scenario configured to notify Pushbullet(http://pushbullet.com) and send a notification to cell device.
 ESP32 is put into low power state and sleeps until interrupt is triggered again.
-
+Interrupt pins: Only RTC IO can be used as a source for external wake source. They are pins: 0,2,4,12-15,25-27,32-39.
 
 Todo
 -----
